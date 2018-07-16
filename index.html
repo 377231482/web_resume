@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        ul {
+            background-image: url(wood.png);
+            width: 700px;
+            height: 100vh;
+            margin: auto;
+            position: relative;
+        }
+
+        ul>li>span {
+            width: 28px;
+            height: 28px;
+            border-radius: 14px;
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 70px;
+            /* background-color: black; */
+            z-index: 15
+        }
+
+        li {
+            width: 380px;
+            height: 118px;
+            /* border: 1px solid red; */
+            border-radius: 30px;
+            margin: auto;
+            margin-top: -18px;
+            position: absolute;
+            top: 100px;
+
+        }
+
+        ul li:nth-child(2n+1) {
+
+            position: relative;
+            right: 100px;
+
+        }
+
+        ul li:nth-child(2n) {
+
+            position: relative;
+            left: 100px;
+            /* bottom: 36px; */
+        }
+
+        ul li:first-child {
+            background-color: #1f1a17;
+            z-index: 17;
+        }
+
+        ul li:nth-child(2) {
+            background-color: #dededc;
+            z-index: 16;
+        }
+
+        ul li:nth-child(3) {
+            background-color: #c4be66;
+            z-index: 15;
+        }
+
+        ul li:nth-child(4) {
+            background-color: #ba8fba;
+            z-index: 14;
+        }
+
+        ul li:nth-child(5) {
+            background-color: #dc214c;
+            z-index: 13;
+        }
+
+        ul li:nth-child(6) {
+            background-color: #e3efc1;
+            z-index: 12;
+        }
+
+        ul li:nth-child(7) {
+            background-color: #d5c2d8;
+            z-index: 11;
+            position: relative;
+        }
+
+        ul li:last-child {
+            background-color: #c1c1c1;
+            z-index: 10;
+        }
+
+        img {
+            position: absolute;
+            right: 0px;
+            bottom: -10px;
+            width: 200px;
+            height: 70px;
+
+        }
+
+        .jianli {
+            font-size: 75px;
+            font-family: '迷你简双线体';
+            color: white;
+            position: absolute;
+            right: 60px;
+            top: -12px;
+            z-index: 10;
+        }
+
+        .name {
+            font-family: '楷体';
+            font-size: 42px;
+            color: #6272a8;
+            position: absolute;
+            right: 210px;
+            top: 30px;
+
+        }
+
+        .ping {
+            font-family: '时尚中黑简体';
+            color: #eceae8;
+            font-size: 20px;
+            position: absolute;
+            right: 225px;
+            top: 80px;
+        }
+
+        .zili {
+            background-color: transparent;
+            width: 210px;
+            height: 200px;
+            font-size: 14px;
+            position: absolute;
+            left: 140px;
+            top: 18px;
+            text-align: right;
+        }
+
+        .zili p:nth-child(1) {
+            font-size: 20px;
+            font-family: '时尚中黑简体';
+        }
+
+        .riqi {
+            font-family: '迷你简双线体';
+            font-size: 22px;
+            color: #e996b0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        ul li:nth-child(7) p {
+            width: 300px;
+
+            font-size: 12px;
+            font-family: '时尚中黑简体';
+
+            margin-left: 50px;
+            /* line-height: 15px; */
+        }
+
+        .zwpj {
+            font-size: 20px!important;
+            font-family: '迷你简双线体';
+            position: absolute;
+            top: 16px;
+            left: 220px
+        }
+
+        .xia {
+            font-family: '时尚中黑简体';
+            font-size: 23px;
+            position: absolute;
+            top: 30px;
+            left: 100px;
+            z-index: 11;
+        }
+
+        .taobao {
+            font-family: '时尚中黑简体';
+            color: white;
+            font-size: 35px;
+            position: absolute;
+            bottom: 10px;
+            left: 150px;
+            z-index: 13;
+        }
+
+        .huangyuan {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: #fff500;
+            position: absolute;
+            top: 0;
+            left: 18px;
+            opacity: 0.5;
+            z-index: 10;
+        }
+
+        .ziyuan {
+            width: 220px;
+            height: 220px;
+            border-radius: 110px;
+            background-color: #29166f;
+            position: absolute;
+            top: -50px;
+            left: 140px;
+            z-index: 9;
+        }
+        .time{
+            font-family: '迷你简双线体';
+            font-size: 23px;
+            color: #e6cce5;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <span><img src="wood.png" alt=""></span>
+            <p class="jianli">简历</p>
+            <p class="name">石大为</p>
+            <p class="ping">shi&nbspda&nbspwei</p>
+            <img src="diwen.png" alt="">
+        </li>
+        <li>
+            <span><img src="wood.png" alt=""></span>
+            <span class="zili">
+                <p>个人信息</p>
+                <p>民族: 汉族</p>
+                <p>出生日期: 93年10月11日</p>
+                <p>身高: 175cm</p>
+            </span>
+        </li>
+        <li>
+            <span><img src="wood.png" alt=""></span>
+            <span class="zili">
+                <p>联系方式</p>
+                <p>电话:18338668395</p>
+                <p>E_Mail:377231482@qq.com</p>
+                <p>QQ:377231482</p>
+            </span>
+        </li>
+        <li>
+            <p class="time">2013年至2016年7月</p>
+            <span><img src="wood.png" alt=""></span>
+            <span class="zili">
+                <p>教育经历</p>
+                <p>于河南省洛阳市河南科技大学</p>
+                <p>就读于计算机科学技术</p>
+
+            </span>
+        </li>
+        <li>
+            <span><img src="wood.png" alt=""></span>
+            <p class="riqi">2017年04月至2018年03月</p>
+            <span class="zili">
+                <p>实践经历</p>
+                <p>深圳市简一网络科技有限公司就职</p>
+                <p>担当全栈工程师</p>
+            </span>
+        </li>
+        <li>
+            <span><img src="wood.png" alt=""></span>
+            <span class="zili">
+                <p>技能水平</p>
+                <p>可熟练操作</p>
+                <p>html+css、jquery、js、vue框架</p>
+                <p>等前端+后台技术</p>
+            </span>
+        </li>
+        <li>
+            <span><img src="wood.png" alt=""></span>
+            <p style="margin-top:18px;width:200px;">1、大胆创新，具有敏锐的时尚触角，对设计方面极感兴趣;</p>
+            <p>2、有良好的独立工作能力，工作认真积极，责任心强，有较好的沟通能力和接受能力;
+                <p>
+                    <p>3、既有团队精神和协调能力，适应能力强。能吃苦耐劳，待人真诚热情</p>
+
+                    <p class="zwpj">自我评价 </p>
+
+        </li>
+        <li>
+            <span class="huangyuan"></span>
+            <span class="ziyuan"></span>
+            <p class="xia">求职意向</p>
+            <p class="taobao">前端工程师</p>
+            <span><img src="wood.png" alt=""></span>
+
+        </li>
+    </ul>
+</body>
+
+</html>
+<!-- 案例分析
+1,先安装字体,给body设置字体样式  看看能否正常显示
+2,根据页面内容,给body 设置字体大小,样式,给子元素内容相似处 以继承
+3,给body添加一个main,设置宽高,背景
+4,给main添加8个div标签,设置div的宽高位置
+5,定位到相对样式,布局
+6,给每个div添加样式
+-->
